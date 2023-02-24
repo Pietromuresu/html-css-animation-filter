@@ -10,3 +10,16 @@
 
 /* esercizio 2 */
 
+.ex-2-square {
+  transition: 2s;
+}
+
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+
+/* esercizio 3 */
+
+
