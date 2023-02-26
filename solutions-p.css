@@ -143,27 +143,74 @@
 /* esercizio 11 */
 
 .ex-11-icon:hover {
-  animation-name: ruota_cerchio;
+  animation-name: ruota_cerchio11;
   animation-iteration-count: infinite;
   animation-duration: 1.2s;
   animation-timing-function: linear;
 }
 
-@keyframes ruota_cerchio {
+@keyframes ruota_cerchio11 {
 
   0%{
-   rotate: 360deg;
+   rotate: 0deg;
   }
   25%{
-    rotate: 270deg;
+    rotate: 90deg;
   }
   50%{
     rotate: 180deg;
   }
   75%{
-    rotate: 90deg;
+    rotate: 270deg;
   }
   100%{
-     rotate: 0deg;
+     rotate: 360deg;
   }
 }
+
+/* esercizio 12 */
+
+
+.ex-12-button:hover .ex-12-top-white{
+  animation-name: rettangolo-top;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes rettangolo-top {
+  0%{
+    left: 10%;
+  }
+  50%{
+    left: calc(100% - 65px);
+  }
+  100%{
+    left: 10%;
+  }
+}
+
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation-name: rettangolo-bottom;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes rettangolo-bottom {
+  0%{
+    right: 10%;
+  }
+  50%{
+    right: calc(100% - 65px);
+  }
+  100%{
+    right: 20%;
+  }
+}
+
+
+
+
+
